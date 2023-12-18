@@ -1,0 +1,405 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 5.0, 14.5, 6.8, },
+		bbMin = { -14.0, -14.5, 0.00, },
+	},
+	collider = {
+		params = { },
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "MESH",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/rumpf_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/innen_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/innen_streben_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/innen_sessel_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/glas.mtl", },
+						mesh = "vehicle/plane/ju52/fenster_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/gestell_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/dachverschluss_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/pegagondeln_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/pax-ture_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1119, 0.8141, 3.235, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", "vehicle/plane/ju52/glas.mtl",},
+						mesh = "vehicle/plane/ju52/fracht_oben_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1972, -0.80661, 3.8944, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/fracht_unten_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1985, -0.80657, 2.5874, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/pegasus_motor_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7108, 0, 2.8348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -2.526, 0, 0) , vec3.new( 2.0599, -4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 2.526, 0, 0) , vec3.new( 2.0566, 4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/rad_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01, 0, 0.62615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/spornrad_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
+					},
+					
+					
+					-----------Ruder--------------
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/seite_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 0, 0, 0) , vec3.new( -12.613, 0, 5.4404 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/hohe_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -90, 0, 0) , vec3.new( -11.995, 0, 4.3866 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_r_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -83.043, -5.8704, -0.71886) , vec3.new( -2.3299, -10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_l_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -96.916, 5.863, -0.71365 ) , vec3.new( -2.3299, 10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_r_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -82.556, -5.9696, -0.78289) , vec3.new( -3.1827, -4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_l_lod0.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -97.392, 5.9518, -0.77497) , vec3.new( -3.1827, 4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/bugschluppen_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = transf.rotZYXTransl(transf.degToRad( 0, -13.53, 0) , vec3.new( 0, 0, 0 )),
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 100,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/rumpf_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/innen_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/glas.mtl", },
+						mesh = "vehicle/plane/ju52/fenster_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/gestell_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/dachverschluss_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/pegagondeln_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", "vehicle/plane/ju52/glas.mtl", },
+						mesh = "vehicle/plane/ju52/pax-ture_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1119, 0.8141, 3.235, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", "vehicle/plane/ju52/glas.mtl",},
+						mesh = "vehicle/plane/ju52/fracht_oben_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1972, -0.80661, 3.8944, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/fracht_unten_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1985, -0.80657, 2.5874, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/pegasus_motor_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7108, 0, 2.8348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -2.526, 0, 0) , vec3.new( 2.0599, -4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 2.526, 0, 0) , vec3.new( 2.0566, 4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/rad_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01, 0, 0.62615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/spornrad_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
+					},
+					
+					
+					-----------Ruder--------------
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/seite_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 0, 0, 0) , vec3.new( -12.613, 0, 5.4404 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/hohe_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -90, 0, 0) , vec3.new( -11.995, 0, 4.3866 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_r_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -83.043, -5.8704, -0.71886) , vec3.new( -2.3299, -10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_l_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -96.916, 5.863, -0.71365 ) , vec3.new( -2.3299, 10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_r_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -82.556, -5.9696, -0.78289) , vec3.new( -3.1827, -4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_l_lod1.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -97.392, 5.9518, -0.77497) , vec3.new( -3.1827, 4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/bugschluppen_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = transf.rotZYXTransl(transf.degToRad( 0, -13.53, 0) , vec3.new( 0, 0, 0 )),
+			},
+			static = false,
+			visibleFrom = 100,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/rumpf_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/innen_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/glas.mtl", },
+						mesh = "vehicle/plane/ju52/fenster_lod0.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/gestell_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/dachverschluss_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/pegagondeln_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", "vehicle/plane/ju52/glas.mtl", },
+						mesh = "vehicle/plane/ju52/pax-ture_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1119, 0.8141, 3.235, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", "vehicle/plane/ju52/glas.mtl",},
+						mesh = "vehicle/plane/ju52/fracht_oben_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1972, -0.80661, 3.8944, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/fracht_unten_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.1985, -0.80657, 2.5874, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 4.7108, 0, 2.8348, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -2.526, 0, 0) , vec3.new( 2.0599, -4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/propeller_3blatt_1_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 2.526, 0, 0) , vec3.new( 2.0566, 4.0599, 2.3276 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/rad_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.01, 0, 0.62615, 1, },
+					},
+					{
+						materials = { "vehicle/plane/ju52/addon1.mtl", },
+						mesh = "vehicle/plane/ju52/spornrad_lod2.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
+					},
+					
+					
+					-----------Ruder--------------
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/seite_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( 0, 0, 0) , vec3.new( -12.613, 0, 5.4404 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/hohe_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -90, 0, 0) , vec3.new( -11.995, 0, 4.3866 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_r_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -83.043, -5.8704, -0.71886) , vec3.new( -2.3299, -10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/quer_l_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -96.916, 5.863, -0.71365 ) , vec3.new( -2.3299, 10.289, 2.8923 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_r_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -82.556, -5.9696, -0.78289) , vec3.new( -3.1827, -4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/flaps_l_lod2.msh",
+						transf = transf.rotZYXTransl(transf.degToRad( -97.392, 5.9518, -0.77497) , vec3.new( -3.1827, 4.1512, 2.2642 )),
+					},
+					{
+						materials = { "vehicle/plane/ju52/rumpf1b.mtl", },
+						mesh = "vehicle/plane/ju52/bugschluppen_lod1.msh",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = transf.rotZYXTransl(transf.degToRad( 0, -13.53, 0) , vec3.new( 0, 0, 0 )),
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 2500,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 0,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+	},
+	version = 1,
+}
+end

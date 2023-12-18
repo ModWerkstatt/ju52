@@ -1,0 +1,107 @@
+function data()
+return {
+	type = "ASSET_DEFAULT",
+	description = {
+		name = _("Ju 52 Asset Set"),
+		description = _("Statische Junkers Ju 52 Flugzeuge.")
+	},
+	availability = {},
+	buildMode = "MULTI",
+	categories = { "Plane Assets" },
+	order = 212210101,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "ju52",
+			name = "Junkers Ju 52",
+			uiType = "ICON_BUTTON",
+			values = { "ui/construction/asset/ju52/ju52_1.tga",  "ui/construction/asset/ju52/ju52_2.tga", "ui/construction/asset/ju52/ju52_3.tga", "ui/construction/asset/ju52/ju52_4.tga", "ui/construction/asset/ju52/ju52_5.tga", "ui/construction/asset/ju52/ju52_6.tga", "ui/construction/asset/ju52/ju52_7.tga", "ui/construction/asset/ju52/ju52_8.tga", "ui/construction/asset/ju52/ju52_9.tga", "ui/construction/asset/ju52/ju52_10.tga", "ui/construction/asset/ju52/ju52_11.tga", "ui/construction/asset/ju52/ju52_12.tga", "ui/construction/asset/ju52/ju52_13.tga", "ui/construction/asset/ju52/ju52_14.tga", "ui/construction/asset/ju52/ju52_1b.tga", "ui/construction/asset/ju52/ju52_2b.tga", "ui/construction/asset/ju52/ju52_1m.tga", "ui/construction/asset/ju52/ju52_2m.tga",},
+			tooltip = _("Ju 52 als Asset"),
+		},
+	},
+	updateFn = function(params)
+		local result = { }
+		result.models = {  }
+		local height = 0
+
+		if params.ju52 == 0 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_1.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 1 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_2.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 2 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_3.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 3 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_4.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 4 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_5.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 5 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_6.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 6 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_7.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 7 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_8.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 8 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_9.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 9 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_10.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 10 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_11.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 11 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_12.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 12 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_13.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 13 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_14.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 14 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_1b.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 15 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_2b.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 16 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_1m.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		if params.ju52 == 17 then
+		result.models[#result.models+1] = {id = "asset/ju52/Ju52_2m.mdl", transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, }, }
+		end
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+		return result
+	end
+}
+end
