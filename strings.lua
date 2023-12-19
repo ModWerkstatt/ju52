@@ -9,7 +9,7 @@ return {
             ["ju52_desc"] = "The Junkers Ju 52/3m (nicknamed \"Tante Ju\" (\"Aunt Ju\" and \"Iron Annie\") is a transport aircraft that was designed and manufactured by German aviation company Junkers. ",
 
             ["Ju 52 Asset Set"] = "Junkers Ju 52 Asset Set",
-            ["Statische Junkers Ju 52 Flugzeuge."] = "Stati Junkers Ju 52 air planes."
+            ["Statische Junkers Ju 52 Flugzeuge."] = "Stati Junkers Ju 52 air planes.",
             ["Ju 52 als Asset"] = "Ju 52 as assets.",
 
             ["ju52_1_name"] = "Luft Hansa 2468 (1932)",
@@ -41,7 +41,7 @@ return {
             ["ju52_desc"] = "Die Junkers Ju 52 (Spitzname: \"Tante Ju\") ist ein dreimotoriges Verkehrs- und Transportflugzeug des deutschen Herstellers Junkers Flugzeugwerk AG in Dessau. Das heute als Ju 52 bekannte Flugzeug ist die dreimotorige Ausführung Junkers Ju 52/3m aus dem Jahr 1932, die aus dem einmotorigen Modell Ju 52/1m hervorging.",
 
             ["Ju 52 Asset Set"] = "Junkers Ju 52 Asset Set",
-            ["Statische Junkers Ju 52 Flugzeuge."] = "Statische Junkers Ju 52 Flugzeuge."
+            ["Statische Junkers Ju 52 Flugzeuge."] = "Statische Junkers Ju 52 Flugzeuge.",
             ["Ju 52 als Asset"] = "Ju 52 als Assets.",
 
             ["ju52_1_name"] = "Luft Hansa 2468 (1932)",
