@@ -101,8 +101,8 @@ return {
 						mesh = "vehicle/plane/ju52/spornrad_lod0.msh",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
 					},
-					
-					
+
+
 					-----------Ruder--------------
 					{
 						materials = { "vehicle/plane/ju52/rumpf4.mtl", },
@@ -250,8 +250,8 @@ return {
 						mesh = "vehicle/plane/ju52/spornrad_lod1.msh",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
 					},
-					
-					
+
+
 					-----------Ruder--------------
 					{
 						materials = { "vehicle/plane/ju52/rumpf4.mtl", },
@@ -389,8 +389,8 @@ return {
 						mesh = "vehicle/plane/ju52/spornrad_lod2.msh",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -12.655, 0, 3.3284, 1, },
 					},
-					
-					
+
+
 					-----------Ruder--------------
 					{
 						materials = { "vehicle/plane/ju52/rumpf4.mtl", },
@@ -586,7 +586,7 @@ return {
 			seats = {
 				{ animation = "driving_upright", crew = true, forward = true, group = 1, standing = false, transf =  { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6, -0.52, 2.8, 1, }, },
 				{ animation = "driving_upright", crew = true, forward = true, group = 1, standing = false, transf =  { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.6,  0.52, 2.8, 1, }, },
-				
+
                 { animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf =  { -0, -1, 0, 0, 1, -0, 0, 0, 0, 0, 1, 0, 0.7, 0.505, 2.45, 1, }, },
                 { animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf =  {  0, 1, 0, 0, -1,  0, 0, 0, 0, 0, 1, 0, 0.7, -0.45, 2.45, 1, }, },
                 { animation = "sitting", crew = false, forward = true, group = 1, standing = false, transf =  { -0, -1, 0, 0, 1, -0, 0, 0, 0, 0, 1, 0, 0.1, 0.505, 2.45, 1, }, },
@@ -614,9 +614,20 @@ return {
 		},
 		transportVehicle = {
 			carrier = "AIR",
-			compartments = {
-				
-			
+			compartmentsList = {
+				{
+					loadConfigs = {
+						{
+							cargoEntries = {
+								{
+									capacity = 70,
+									type = "PASSENGERS",
+								},
+							},
+							toHide = { },
+						},
+					},
+				},
 			},
 			loadSpeed = 1,
 			multipleUnitOnly = false,
